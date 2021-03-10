@@ -122,7 +122,7 @@ def main():
                 if (ln == 0):
                     timeStamp=int(line)
                     # if more than 5 minutes or new year (now = 0)
-                    if (abs(now - timeStamp) > 5):
+                    if (abs(now - timeStamp) >= 5):
                         fetchNew = True
                         break
                     else:
