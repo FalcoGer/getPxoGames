@@ -78,9 +78,12 @@ def fetchNewList():
             if (type in TYPES):
                 type = TYPES[type]
             
+            numPlayers = game["NumPlayers"]
+            maxPlayers = game["MaxPlayers"]
+            
             # print in one concise string per game found
             # print (name + " [" + gameType + "] (" + mode + "|" + type + "|" + state + ")")
-            gameListStr = gameListStr + "\n" + f"{(srvID + 1)}/{len(servers)} - {name} ({mode}|{type}|{state})"
+            gameListStr = gameListStr + "\n" + f"{(srvID + 1)}/{len(servers)} - {name} ({numPlayers}/{maxPlayers}) ({mode}|{type}|{state})"
             
     return gameListStr
     
