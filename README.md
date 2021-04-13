@@ -10,3 +10,5 @@ Add command to panel
 ```bash
 /bin/bash -c '/usr/bin/python3 /absolute/path/to/getPxoGames.py $(date -u +%s)'
 ```
+
+https://pxo.nottheeye.com/api/docs/
